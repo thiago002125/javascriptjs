@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="especialidade.css">
+    <script src="especialidade.js"></script>
+    <title>Especialidades</title>
+</head>
+<body page = 'lista'>
+    <header>
+        <div class="cab"><img src="https://w7.pngwing.com/pngs/516/179/png-transparent-pain-management-stethoscope-physician-computer-icons-stethoscope-icon-cdr-text-hospital.png" alt="logo" width="60" height="60" class="logo">
+        <h1 class="title">Consultas Médicas</h1></div>
+        <nav class="menu">
+            <ul>
+                <li style="float: left;"><a href="index.html" class="ativo2">Início</a></li>
+                <li style="float: right;"><a href="cad.html" class="ativo1">Cadastrar-se</a></li>
+                <li><a href="login.html">Entrar</a></li>
+                <li class="drop">
+                    <a href="#" class="drobot">Admim</a>
+                    <div class="dropcont">
+                        <a href="medicos.html">Médicos</a>
+                        <a href="especialidade.html">Especialidades</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="cad">Cadastrar Especialidade</h1>
+        <section>
+            <div id="listaRegistro">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Especialidade</th>
+                            <th>Edição</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaRegistrosBody"></tbody>
+                </table>
+                <div>
+                    <button onclick="vizualizar('cadastro', true)">Novo Medico</button>
+                </div>
+            </div>
+            <form id="cadastroRegistro">
+                <label>ID
+                    <input type="number" readonly id="id">
+                </label>
+                <label>Nome
+                    <input type="text" id="nome">
+                </label>
+                <label>Especialidade
+                    <input type="text" id="especialidade">
+                </label>
+            <div class="botao">
+                <button>Salvar</button>
+                <button onclick="vizualizar('lista')" type="button">Cancelar</button>
+            </div>
+            </form>
+        </main>
+        </section>
+</body>
+</html>
